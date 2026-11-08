@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
     private String broAgent = "";
     private boolean portrait = true;
     private boolean screenOn = false;
-    private boolean allowZoom = false; 
+    private boolean allowZoom = false;
+    private boolean scrollBar = true;
     private boolean forceDark = false;
     private boolean refreshOn = false;
     private WebView webView;
@@ -533,6 +534,7 @@ public class MainActivity extends AppCompatActivity {
             portrait = parseBoolean(jsContent, "portrait", true);
             screenOn = parseBoolean(jsContent, "screenOn", false);
             allowZoom = parseBoolean(jsContent, "allowZoom", false); 
+            scrollBars = parseBoolean(jsContent, "scrollBar", true);
             forceDark = parseBoolean(jsContent, "forceDark", false);
             refreshOn = parseBoolean(jsContent, "refreshOn", false);
             startURL = parseString(jsContent, "startURL", "");
