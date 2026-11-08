@@ -193,6 +193,9 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setUseWideViewPort(true);
 
+        webView.setVerticalScrollBarEnabled(scrollBar);
+        webView.setHorizontalScrollBarEnabled(scrollBar);
+
         if (broAgent != null && !broAgent.trim().isEmpty()) {
             webSettings.setUserAgentString(broAgent);
         }
