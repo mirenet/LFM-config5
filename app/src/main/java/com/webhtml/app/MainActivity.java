@@ -537,7 +537,7 @@ public class MainActivity extends AppCompatActivity {
             portrait = parseBoolean(jsContent, "portrait", true);
             screenOn = parseBoolean(jsContent, "screenOn", false);
             allowZoom = parseBoolean(jsContent, "allowZoom", false); 
-            scrollBars = parseBoolean(jsContent, "scrollBar", true);
+            scrollBar = parseBoolean(jsContent, "scrollBar", true);
             forceDark = parseBoolean(jsContent, "forceDark", false);
             refreshOn = parseBoolean(jsContent, "refreshOn", false);
             startURL = parseString(jsContent, "startURL", "");
